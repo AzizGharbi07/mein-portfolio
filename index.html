@@ -2,38 +2,244 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Mein Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziz Gharbi | Informatik-Student & Entwickler</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Aziz Gharbi</h1>
-        <p>Informatik-Student an der Hochschule Darmstadt</p>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-info">
+                    <img src="images/profile.jpg" alt="Aziz Gharbi" class="profile-pic">
+                    <div>
+                        <h1>Aziz Gharbi</h1>
+                        <p class="subtitle">Informatik-Student an der Hochschule Darmstadt</p>
+                        <div class="social-links">
+                            <a href="https://github.com/AzizGharbi07" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/azizgharbi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:aziz.gharbi@stud.tu-darmstadt.de"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Über mich</h2>
-        <p>Ich studiere Informatik und interessiere mich für Softwareentwicklung und Datenanalyse. Derzeit suche ich eine Werkstudentenstelle, um praktische Erfahrung zu sammeln.</p>
+    <!-- Über mich -->
+    <section id="about">
+        <div class="container">
+            <h2>Über mich</h2>
+            <div class="about-content">
+                <p>
+                    Ich bin Informatik-Student im 3. Semester an der Hochschule Darmstadt (h_da) 
+                    mit etwa 60 Credit Points. Neben dem Studium entwickle ich eigenständig Softwareprojekte, 
+                    um meine praktischen Fähigkeiten zu vertiefen und reale Probleme zu lösen.
+                </p>
+                <p>
+                    Meine Stärken liegen in der Softwareentwicklung mit Python, C++, JavaScript und modernen 
+                    Frameworks. Ich bin auf der Suche nach einer Werkstudentenstelle, um mein Wissen in der 
+                    Praxis anzuwenden und von erfahrenen Entwicklern zu lernen.
+                </p>
+                <div class="skills">
+    <h3>Technologien & Skills</h3>
+    <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">Qt</span>
+        <span class="skill-tag">Git/GitHub</span>
+        <span class="skill-tag">APIs</span>
+        <span class="skill-tag">Datenanalyse</span>
+        <span class="skill-tag">Kryptographie</span>
+        <span class="skill-tag">matplotlib</span>
+    </div>
+    
+    <!-- Sprachen Sektion -->
+    <div class="languages-section">
+        <h3 style="margin-top: 2rem; text-align: center;">Sprachen</h3>
+        <div class="languages-grid">
+            <div class="language-item">
+                <span class="language-flag">DE</span>
+                <span class="language-name">Deutsch</span>
+                <span class="language-level">C1</span>
+            </div>
+            <div class="language-item">
+                <span class="language-flag">EN</span>
+                <span class="language-name">Englisch</span>
+                <span class="language-level">C1</span>
+            </div>
+            <div class="language-item">
+                <span class="language-flag">FR</span>
+                <span class="language-name">Französisch</span>
+                <span class="language-level">C1</span>
+            </div>
+            <div class="language-item">
+                <span class="language-flag">AR</span>
+                <span class="language-name">Arabisch</span>
+                <span class="language-level">Muttersprache</span>
+            </div>
+            <div class="language-item">
+                <span class="language-flag">🇪🇸</span>
+                <span class="language-name">Spanisch</span>
+                <span class="language-level">A2</span>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>HTML & CSS</li>
-            <li>C++</li>
-            <li>Git</li>
-        </ul>
+    <!-- Projekte -->
+    <section id="projects">
+        <div class="container">
+            <h2>Meine Projekte</h2>
+            <div class="projects-grid">
+                
+                <!-- Budget-Tracker -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Budget-Tracker</h3>
+                    <p>Desktop-Anwendung zur Verwaltung von Einnahmen und Ausgaben mit Datenvisualisierung und Export-Funktionen.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">tkinter</span>
+                        <span class="tech-tag">matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AzizGharbi07/budget-tracker" target="_blank" class="btn">GitHub</a>
+                        <a href="#" class="btn secondary">Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Passwort-Manager -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Passwort-Manager</h3>
+                    <p>Sichere Desktop-Anwendung zur Verwaltung von Passwörtern mit AES-128-Verschlüsselung.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">cryptography</span>
+                        <span class="tech-tag">tkinter</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AzizGharbi07/passwort-manager" target="_blank" class="btn">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Reisebüro-Software -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>Reisebüro-Software</h3>
+                    <p>Umfassende Desktop-Anwendung zur Verwaltung von Kunden, Reisen und Buchungen mit Konsistenzprüfungen.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Qt</span>
+                        <span class="tech-tag">Geo-Visualisierung</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AzizGharbi07/reisebuero-software" target="_blank" class="btn">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Wetter-Tool -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Wetter-Tool</h3>
+                    <p>CLI- und GUI-Anwendung zur Abfrage des aktuellen Wetters und Vorhersagen weltweit.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">tkinter</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AzizGharbi07/wetter-tool" target="_blank" class="btn">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- To-Do-App -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>To-Do-App</h3>
+                    <p>Responsive Web-Anwendung zur Aufgabenverwaltung mit clientseitiger Datenspeicherung.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">localStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AzizGharbi07/todo-app" target="_blank" class="btn">GitHub</a>
+                        <a href="https://azizgharbi07.github.io/todo-app/" target="_blank" class="btn secondary">Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio-Website -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Portfolio-Website</h3>
+                    <p>Meine persönliche Webseite zur Präsentation von Projekten und Fähigkeiten.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AzizGharbi07/mein-portfolio" target="_blank" class="btn">GitHub</a>
+                        <a href="https://azizgharbi07.github.io/mein-portfolio/" target="_blank" class="btn secondary">Live Demo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Projekte</h2>
-        <p>Ich baue gerade meine erste Webseite – stay tuned!</p>
+    <!-- Kontakt -->
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <div class="contact-content">
+                <p>Ich bin auf der Suche nach einer Werkstudentenstelle im IT-Bereich. Gerne stehe ich für weitere Fragen zur Verfügung!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aziz.gharbi@stud.tu-darmstadt.de</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Darmstadt, Deutschland</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span><a href="https://github.com/AzizGharbi07" target="_blank">github.com/AzizGharbi07</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>Kontakt: mo.aziz.gharbi@gmail.com</p>
+        <div class="container">
+            <p>&copy; 2024 Aziz Gharbi. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
